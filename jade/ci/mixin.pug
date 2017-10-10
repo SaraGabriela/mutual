@@ -1,0 +1,87 @@
+mixin portada(titulo,fondo)
+	.bgSmall(class=fondo)
+	.row.jumbotron.portadaSmall
+		h3.display-4= titulo 
+
+mixin  tab(clase,link,contenido,img)
+	li.tabLink.align-middle
+		a.d-inline-block(href=link,data-toggle="tab",class=clase)
+			p.d-inline-block=contenido
+			img(src=img,style="width:2rem;")
+
+mixin nece(modal,funcion)
+	h5.darkTxt ¿Para qué lo necesitas?
+	select.mg-b#usage
+		option Comprar mercadería
+		option Mejorar mi negocio
+		option Mejorar mi casa
+		option Para el hogar
+		option Para vacaciones
+		option Para viajar
+		option Pagar deudas
+		option Educación
+		option Evento familiar
+		option Salud
+		option Compra de automóvil
+		option Compra de bienes
+		option Otro
+	button.btn.btnPrincipal.d-block(type="button",data-toggle="modal",data-target=modal,onclick=funcion) Simular préstamo
+
+mixin tabCont(clase,ide,content)
+	div.tab-pane.darkTxt.pd-1(class=clase,id=ide)
+		-var con=content
+		case con
+			when 'joyas'
+				.row.text-center
+					h3.darkTxt.mg-b Garantía en <span class="boldT">Joyas</span>
+				.row
+					.col
+						h5.darkTxt ¿De cuánto es el peso promedio de tu joya?(en gramos)
+						input.mg-b#peso(type="text")
+						+nece('#modalJoyas','calcJoya()')
+			when 'electro'
+				.row.text-center
+					h3.darkTxt.mg-b Garantía en <span class="boldT">Electrodomésticos</span>
+				.row
+					.col
+						h5.darkTxt ¿En qué año compraste tu electrodoméstico?
+						input.mg-b#fecha(type="text")
+						h5.darkTxt ¿Cuánto pagaste al comprar tu electrodoméstico?
+						input.mg-b#pElec(type="text")
+						+nece('#modalElec','calcElec()')
+			when 'vehiculo'
+				.row.text-center
+					h3.darkTxt.mg-b Garantía en <span class="boldT">Vehículos</span>
+				.row
+					.col
+						h5.darkTxt ¿En qué año compraste tu vehículo?
+						input.mg-b#fechaV(type="text")
+						h5.darkTxt ¿Cuánto pagaste al comprar tu vehículo?
+						input.mg-b#pVehiculo(type="text")
+						+nece('#modalVehiculo','calcVehiculo()')
+						//+nece('#modalVehiculo','calcVehiculo()')
+			when 'inmu'
+				.row.text-center
+					h3.darkTxt.mg-b Garantía en <span class="boldT">Inmuebles</span>
+				.row
+					.col
+						h5.darkTxt ¿En qué año compraste tu inmueble?
+						input.mg-b#fechaI(type="text")
+						h5.darkTxt ¿Cuál es tu precio de autoavaluo?
+						input.mg-b#pInmu(type="text")
+						+nece('#modalInmu','calcInmu()')
+						//nev				
+
+mixin modal(ide,idcontenido)
+	.modal.fade(id=ide,tabindex="-1",role="dialog",aria-labelledby="myModalLabel")
+		div(class="modal-dialog",role="document")
+			.modal-content
+				.modal-header
+					button(type="button",class="close",data-dismiss="modal",aria-label="Close")
+						span(aria-hidden="true") &times;
+				.modal-body
+					h4.text-center(id=idcontenido)
+				.modal-footer
+					button.btn.btn-default(type="button",data-dismiss="modal") Cerrar
+
+

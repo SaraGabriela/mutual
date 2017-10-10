@@ -1,0 +1,36 @@
+extends ci/estructura.pug
+include ci/mixin.pug
+
+block detalle
+	+modal('modalJoyas','aJoya')
+	+modal('modalElec','aElec')
+	+modal('modalVehiculo','aVehiculo')
+	+modal('modalInmu','aInmu')
+	+portada('PRÉSTAMOS','prestamosP')
+	.row.justify-content-center.whitebg.align-items-center.pd-1
+		.col-md-10
+			ul
+				li Solicita desde 100 hasta 10,000 soles.
+				li Obtén tu pre-aprobación al instante.
+				li Préstamos para tu negocio, deudas, hogar, educación y más.
+				li Solo con una prenda tienes tu dinero en 10 minutos.
+	.row.justify-content-center.whitebg.align-items-center.pd-1
+		.col-md-10.darkBox
+			h3.boldT Requisitos
+			ol
+				li DNI Vigente
+				li Contar con ingresos mensuales o negocio con RUC
+	.row.justify-content-center.palebg.align-items-center.pd-1.simulationP
+		.container#exTab1
+			h2.accentTxt.mg-b.text-center ¡Simula tu préstamo!
+			h4.mg-b.darkTxt Préstamos con garantía en...
+			ul.nav.nav-pills
+				+tab('active','#1a','Joyas','../img/diamond.png')
+				+tab(' ','#2a','Electrodomésticos','../img/iron.png')
+				+tab(' ','#3a','Vehículos','../img/car.png')
+				+tab(' ','#4a','Inmuebles','../img/diamond.png')
+			div.tab-content.clearfix
+				+tabCont('active','1a','joyas')
+				+tabCont(' ','2a','electro')
+				+tabCont(' ','3a','vehiculo')
+				+tabCont(' ','4a','inmu')

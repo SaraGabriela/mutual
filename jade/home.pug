@@ -1,0 +1,46 @@
+extends ci/estructura.pug
+
+block detalle
+	.row
+		.carousel.slide#carouselExampleIndicators(data-ride="carousel")
+			ol.carousel-indicators
+				li.active(data-target="#carouselExampleIndicators",data-slide-to="0")
+				li(data-target="#carouselExampleIndicators",data-slide-to="1")
+				li(data-target="#carouselExampleIndicators",data-slide-to="2")
+			.carousel-inner
+				.carousel-item.active
+					img.d-block.w-100(src="http://asexma.cl/wp-content/uploads/2013/05/emprendedores.jpg",alt="First slide")
+				.carousel-item
+					img.d-block.w-100(src="http://asexma.cl/wp-content/uploads/2013/05/emprendedores.jpg",alt="Second slide")
+				.carousel-item
+					img.d-block.w-100(src="http://asexma.cl/wp-content/uploads/2013/05/emprendedores.jpg",alt="Third slide")
+			a.carousel-control-prev(href="#carouselExampleIndicators",role="button",data-slide="prev")
+				span.carousel-control-prev-icon(aria-hidden="true")
+				span.sr-only Previous
+			a.carousel-control-next(href="#carouselExampleIndicators",role="button",data-slide="next")
+				span.carousel-control-next-icon(aria-hidden="true")
+				span.sr-only Next
+	.row.whitebg.hbox.align-items-center
+		.imagen.col-md-6.text-center
+			img(src="../img/handshake.jpg")
+		.contenido.col-md-6.text-center
+			h4 TE PRESTAMOS AL INSTANTE DESDE 100 HASTA 10,000 SOLES
+			h3 TE APROBAMOS EN 10 MINUTOS
+			a(href="prestamos.html")
+				a.btn.btnPrincipal(role="button",href="prestamos.html") Solicita tu préstamo
+			p Somos la financiera del futuro, préstamos e inversiones en línea
+	.row.hinversion.hbox.palebg.align-items-center
+		.contenido.col.text-center
+			h3 EMPIEZA A INVERTIR
+			h5.boldT Pagamos más que cualquier banco o financiera por tu dinero
+			h4 De 18% hasta 24 % al año
+			.nopad.text-left.col-md-8.ml-5(style="width:70%;")
+				p Saca tu cuenta:
+				p 1. Invierte S/.5,000 soles
+				p 2. Tu hijo recibe S/.100 soles mensuales
+				p 3. Al año te devolvemos tus S/.5,000 soles
+			a.btn.btnPrincipal(role="button",href="inversiones.html") Simula tu inversión
+		.imagen.col.text-center
+			img(src="../img/desk.jpg")
+		
+			

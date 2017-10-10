@@ -1,0 +1,25 @@
+extends ci/base.pug
+include ci/mixin.pug
+
+block content
+	+portada('CONTACTO','abf')
+	.row
+		.col
+			h4 ¿Tienes alguna consulta?
+			form
+				.form-group
+					input(type="name",class="form-control",id="formName" aria-describedby="userName" placeholder="Nombre")
+					input(type="email",class="form-control",id="formEmail" aria-describedby="email" placeholder="Email")
+					input(type="subject",class="form-control",id="formSubject" aria-describedby="subject" placeholder="Asunto")
+					textarea(class="form-control",id="formDescription",rows="3",placeholder="Mensaje")
+					button.btn(type="submit") Enviar
+		.col
+			div
+				h4 Dirección
+				p Lorem ipsum dolor sit amet
+			div
+				h4 Llámanos
+				p Lorem ipsum dolor sit amet
+
+
+		
