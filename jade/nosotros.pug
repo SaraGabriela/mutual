@@ -2,16 +2,18 @@ extends ci/estructura.pug
 include ci/mixin.pug
 
 block detalle
-	+portada('NOSOTROS','nosotrosP')
-	.row.justify-content-center.whitebg.align-items-center.pd-1
+	.bgSmall.nosotrosP
+	.row.portadaSmall
+		.col-md-6.align-self-start.whitebg
+			h1 ¿Quiénes somos?
+			h5.text-justify.mg-b.blueT Somos una financiera de apoyo social regulada por la Superintendencia de Banca, Seguros y AFP.
+			h4.text-justify <span class="boldT">Nuestro objetivo es apoyar a las familias con fáciles préstamos prendarios</span> ayudando a enfrentar sus  problemas con los bancos, cajas municipales, financieras, prestamistas de la calle y agiotistas (incluso cuando estamos marcados por las centrales de riesgo).
+			br
+			h5
+				em.blueT.boldT MUTUAL POPULAR, LA MUTUAL DEL PUEBLO
+	.row.justify-content-center.bluebg.align-items-center.pd-1
 		.col-md-10
-			h3.mg-b.boldT Únete a la comunidad de Mutual Popular, la Mutual del Pueblo
-			h4 Saca tu cuenta: 
-			h4.text-justify Somos, una financiera de apoyo social regulada por la Superintendencia de Banca, Seguros y AFP.
-			h5.text-justify Nuestro objetivo es apoyar a las familias con fáciles préstamos prendarios ayudando a enfrentar sus  problemas con los bancos, cajas municipales, financieras, prestamistas de la calle y agiotistas (incluso cuando estamos marcado por la centrales de riesgo).
-	.row.justify-content-center.palebg.align-items-center.pd-1
-		.col-md-10
-			p.boldT Te autorizamos a verificar nuestra documentación de respaldo:
+			h4.boldT.yellowT Te autorizamos a verificar nuestra documentación de respaldo:
 			ol
 				li Superintendencia de Banca, Seguros y AFP, Resolución Nº 2017-00047831
 				li SUNAT, RUC Nº 20602178618
@@ -19,15 +21,15 @@ block detalle
 				li Municipalidad Provincial de Arequipa. Licencia de Funcionamiento Nº 00010021410MPA
 				li INDECI, Defensa Civil, Registro Nº 1281-2017-MPA
 	.row.justify-content-around.whitebg.pd-1
-		.col-md-5.grayBox
+		.col-md-5.ybox
 			h4.text-center MISIÓN
 			p La solución inmediata a tus problemas financieros en línea y presencial, de préstamos y de inversiones. Si nadie te presta Mutual Popular te presta.
-		.col-md-5.grayBox
+		.col-md-5.ybox
 			h4.text-center VISIÓN
 			p Ser la empresa de mayor confianza en el mercado financiero de crédito prendario en el país y de inversiones financieras con la mejor garantía, para promover el desarrollo y el éxito de nuestros clientes.
-	.row.justify-content-center.palebg.align-items-center.pd-1
-		.col-md-8
-			h3 Nuestras características:
+	.row.justify-content-center.redbg.align-items-center.pd-1
+		.col-md-10.whitebg
+			h3.yellowT.boldT Nuestras características:
 			ul
 				li Préstamos en línea, comodidad y servicios las 24 horas al día, 7 días a la semana.
 				li Las mayores ventajas, ahorro en tiempo y pasajes, todo desde tu casa.

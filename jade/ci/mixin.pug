@@ -27,6 +27,15 @@ mixin nece(modal,funcion)
 		option Otro
 	button.btn.btnPrincipal.d-block(type="button",data-toggle="modal",data-target=modal,onclick=funcion) Simular préstamo
 
+mixin inv(modal,funcion)
+	h5.darkTxt ¿Cuál es el destino de tus utilidades?
+	select.mg-b#usage
+		option Ganar más intereses que en bancos, cajas municipales o financieras
+		option Que mi hijo tenga su mesada mensual sin que me cueste
+		option Que mis ahorros ganen más dinero
+		option Otro
+	button.btn.btnPrincipal.d-block(type="button",data-toggle="modal",data-target=modal,onclick=funcion) Simular inversión
+
 mixin tabCont(clase,ide,content)
 	div.tab-pane.darkTxt.pd-1(class=clase,id=ide)
 		-var con=content
@@ -79,9 +88,18 @@ mixin modal(ide,idcontenido)
 				.modal-header
 					button(type="button",class="close",data-dismiss="modal",aria-label="Close")
 						span(aria-hidden="true") &times;
-				.modal-body
-					h4.text-center(id=idcontenido)
+				.modal-body.justify-content-center
+					h4.text-center.pd-1(id=idcontenido)
 				.modal-footer
-					button.btn.btn-default(type="button",data-dismiss="modal") Cerrar
+					button.btn.btnPrincipal(type="button",data-dismiss="modal") Cerrar
+
+mixin pregunta(idHead,clase,idCont,contName,pregunta,resp,exp,show)
+	.card.redbg
+		div(class="card-header",role="tab",id=idHead)
+			h5.mb-0
+				a(class=clase,data-toggle="collapse",href=idCont,aria-expanded=exp,aria-controls=contName)=pregunta
+		div(id=contName,class="collapse",class=show,role="tabpanel",aria-labelledby=idHead, data-parent="#accordion")
+			.card-body.text-justify.whitebg
+				p=resp
 
 

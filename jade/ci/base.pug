@@ -2,8 +2,9 @@ doctype html
 html(lang='es-PE')
     head
         meta(charset='UTF-8')
+        meta(name="viewport",content="width=device-width, initial-scale=1.0")
         block title
-          title Mutual Poular       
+          title Mutual Popular       
         link(rel='stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css', integrity='sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M', crossorigin='anonymous') 
         link(rel='stylesheet', type='text/css', href='../css/main.css')
         link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800",rel="stylesheet")
@@ -14,18 +15,18 @@ html(lang='es-PE')
         script(type='text/javascript', src='../js/main.js')
     body
         div.container-fluid
-                div.row.navbar.navbar-expand-lg
-                    a.navbar-brand(href='index.html')
+                div.row.navbar.navbar-expand-lg.justify-content-center
+                    a.navbar-brand.text-center(href='../index.html')
                         img(src="../img/logo.png", style="width:45%;")
                         h2.mg-l.xboldT(style="vertical-align:middle; display:inline-block") MUTUAL <br> POPULAR
-                    button.navbar-toggler.align-self-end(type='button',data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                    button.navbar-toggler.align-self-center(type='button',data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
                         span.navbar-toggler-icon
-                    div.collapse.navbar-collapse(id='navbarSupportedContent')
+                    div.collapse.navbar-collapse.justify-content-center(id='navbarSupportedContent')
                         ul.navbar-nav.mr-auto
                             li.nav-item.active
-                                a.nav-link(href='index.html') INICIO
+                                a.nav-link(href='../index.html') INICIO
                             li.nav-item
-                                a.nav-link(href='nosotros.html') NOSOTROS
+                                a.nav-link(href='nosotros.html') ¿QUIÉNES SOMOS?
                             li.nav-item
                                 a.nav-link(href='prestamos.html') PRÉSTAMOS
                             li.nav-item

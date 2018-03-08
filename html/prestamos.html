@@ -2,7 +2,8 @@
 <html lang="es-PE">
   <head>
     <meta charset="UTF-8">
-    <title>Mutual Poular       </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutual Popular       </title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800" rel="stylesheet">
@@ -14,18 +15,18 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row navbar navbar-expand-lg"><a class="navbar-brand" href="index.html"><img src="../img/logo.png" style="width:45%;">
+      <div class="row navbar navbar-expand-lg justify-content-center"><a class="navbar-brand text-center" href="../index.html"><img src="../img/logo.png" style="width:45%;">
           <h2 class="mg-l xboldT" style="vertical-align:middle; display:inline-block;">MUTUAL <br> POPULAR</h2></a>
-        <button class="navbar-toggler align-self-end" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <button class="navbar-toggler align-self-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active"><a class="nav-link" href="index.html">INICIO</a></li>
-            <li class="nav-item"><a class="nav-link" href="nosotros.html">NOSOTROS</a></li>
+            <li class="nav-item active"><a class="nav-link" href="../index.html">INICIO</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">¿QUIÉNES SOMOS?</a></li>
             <li class="nav-item"><a class="nav-link" href="prestamos.html">PRÉSTAMOS</a></li>
             <li class="nav-item"><a class="nav-link" href="inversiones.html">INVERSIONES</a></li>
             <li class="nav-item"><a class="nav-link" href="servicios.html">SERVICIOS</a></li>
             <li class="nav-item"><a class="nav-link" href="preguntas.html">PREGUNTAS FRECUENTES</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.php">CONTACTO</a></li>
           </ul>
         </div>
       </div>
@@ -35,11 +36,11 @@
             <div class="modal-header">
               <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
-            <div class="modal-body">
-              <h4 class="text-center" id="aJoya"></h4>
+            <div class="modal-body justify-content-center">
+              <h4 class="text-center pd-1" id="aJoya"></h4>
             </div>
             <div class="modal-footer">
-              <button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
+              <button class="btn btnPrincipal" type="button" data-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
@@ -50,11 +51,11 @@
             <div class="modal-header">
               <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
-            <div class="modal-body">
-              <h4 class="text-center" id="aElec"></h4>
+            <div class="modal-body justify-content-center">
+              <h4 class="text-center pd-1" id="aElec"></h4>
             </div>
             <div class="modal-footer">
-              <button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
+              <button class="btn btnPrincipal" type="button" data-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
@@ -65,11 +66,11 @@
             <div class="modal-header">
               <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
-            <div class="modal-body">
-              <h4 class="text-center" id="aVehiculo"></h4>
+            <div class="modal-body justify-content-center">
+              <h4 class="text-center pd-1" id="aVehiculo"></h4>
             </div>
             <div class="modal-footer">
-              <button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
+              <button class="btn btnPrincipal" type="button" data-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
@@ -80,21 +81,19 @@
             <div class="modal-header">
               <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
-            <div class="modal-body">
-              <h4 class="text-center" id="aInmu"></h4>
+            <div class="modal-body justify-content-center">
+              <h4 class="text-center pd-1" id="aInmu"></h4>
             </div>
             <div class="modal-footer">
-              <button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
+              <button class="btn btnPrincipal" type="button" data-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
       </div>
       <div class="bgSmall prestamosP"></div>
-      <div class="row jumbotron portadaSmall">
-        <h3 class="display-4">PRÉSTAMOS</h3>
-      </div>
-      <div class="row justify-content-center whitebg align-items-center pd-1">
-        <div class="col-md-10">
+      <div class="row portadaSmall justify-content-center">
+        <div class="col-md-6 whitebg">
+          <h3 class="yellowT boldT">¡Préstamos al instante!</h3>
           <ul>
             <li>Solicita desde 100 hasta 10,000 soles.</li>
             <li>Obtén tu pre-aprobación al instante.</li>
@@ -104,18 +103,18 @@
         </div>
       </div>
       <div class="row justify-content-center whitebg align-items-center pd-1">
-        <div class="col-md-10 darkBox">
-          <h3 class="boldT">Requisitos</h3>
+        <div class="col-md-10 ybox">
+          <h3 class="boldT blueT">Requisitos</h3>
           <ol>
             <li>DNI Vigente</li>
             <li>Contar con ingresos mensuales o negocio con RUC</li>
           </ol>
         </div>
       </div>
-      <div class="row justify-content-center palebg align-items-center pd-1 simulationP">
+      <div class="row justify-content-center redbg align-items-center pd-1 simulationP">
         <div class="container" id="exTab1">
-          <h2 class="accentTxt mg-b text-center">¡Simula tu préstamo!</h2>
-          <h4 class="mg-b darkTxt">Préstamos con garantía en...</h4>
+          <h2 class="yellowT xboldT mg-b text-center">¡Simula tu préstamo!</h2>
+          <h4 class="mg-b whiteT">Préstamos con garantía en...</h4>
           <ul class="nav nav-pills">
             <li class="tabLink align-middle"><a class="d-inline-block active" href="#1a" data-toggle="tab">
                 <p class="d-inline-block">Joyas</p><img src="../img/diamond.png" style="width:2rem;"/></a></li>
@@ -124,7 +123,7 @@
             <li class="tabLink align-middle"><a class="d-inline-block  " href="#3a" data-toggle="tab">
                 <p class="d-inline-block">Vehículos</p><img src="../img/car.png" style="width:2rem;"/></a></li>
             <li class="tabLink align-middle"><a class="d-inline-block  " href="#4a" data-toggle="tab">
-                <p class="d-inline-block">Inmuebles</p><img src="../img/diamond.png" style="width:2rem;"/></a></li>
+                <p class="d-inline-block">Inmuebles</p><img src="../img/home.png" style="width:2rem;"/></a></li>
           </ul>
           <div class="tab-content clearfix">
             <div class="tab-pane darkTxt pd-1 active" id="1a">
@@ -193,7 +192,7 @@
                 <div class="col">
                   <h5 class="darkTxt">¿En qué año compraste tu vehículo?</h5>
                   <input class="mg-b" id="fechaV" type="text"/>
-                  <h5 class="darkTxt">¿Cuánto pagaste al comprar tu vehículo?</h5>
+                  <h5 class="darkTxt">¿Cuánto pagaste al comprar tu vehículo? (Ingresa el monto en soles)</h5>
                   <input class="mg-b" id="pVehiculo" type="text"/>
                   <h5 class="darkTxt">¿Para qué lo necesitas?</h5>
                   <select class="mg-b" id="usage">
@@ -222,9 +221,7 @@
               </div>
               <div class="row">
                 <div class="col">
-                  <h5 class="darkTxt">¿En qué año compraste tu inmueble?</h5>
-                  <input class="mg-b" id="fechaI" type="text"/>
-                  <h5 class="darkTxt">¿Cuál es tu precio de autoavaluo?</h5>
+                  <h5 class="darkTxt">¿Cuánto pagas por autoavaluo por año?</h5>
                   <input class="mg-b" id="pInmu" type="text"/>
                   <h5 class="darkTxt">¿Para qué lo necesitas?</h5>
                   <select class="mg-b" id="usage">
@@ -251,7 +248,7 @@
         </div>
       </div>
       <div class="row justify-content-around contactBar">
-        <h1>¿NECESITAS MÁS INFORMACIÓN?</h1><a class="btn btn-lg btnPrincipal" role="button" href="contacto.html">Contáctanos</a>
+        <h1>¿NECESITAS MÁS INFORMACIÓN?</h1><a class="btn btn-lg btnPrincipal" role="button" href="contacto.php">Contáctanos</a>
       </div>
     </div>
   </body>

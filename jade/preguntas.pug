@@ -2,7 +2,11 @@ extends ci/estructura.pug
 include ci/mixin.pug
 
 block detalle
-	+portada('PREGUNTAS FRECUENTES','abf')
-	.row.justify-content-center
-		.col-md-10
-			p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	.row.whitebg.justify-content-center
+		.col-md-10.whitebg
+			h3.blueT.xboldT.mg-b Preguntas frecuentes
+			.accordion(role="tablist")
+				+pregunta('p1',' ','#r1','r1','¿Cuándo vence mi contrato y no tengo dinero que hago?','El contrato vence a los 30 días de efectuado el préstamo. En caso de no tener dinero para cancelar la deuda total, usted puede amortizar en parte y renovar su contrato, pagando sólo los intereses y tiene usted 30 días más de plazo.','true','show')
+				+pregunta('p2','collapsed','#r2','r2','¿Si no pago los intereses a los 30 dias que pasa?','Si usted no paga los intereses, tiene 15 dias más para pagar, se incluye el pago por los dias de retraso y se renueva el contrato como nuevo. Si usted pasa de los 45 dias la prenda entra en remate por 30 dias mas, allí termina el periodo de gracia.','false','')
+				+pregunta('p3','collapsed','#r3','r3','¿Cómo evito el remate de mi prenda?','En el lapso de espera usted se acerca a nuestras oficinas a cancelar su deuda, antes de la fecha de remate y recupera su prenda, incluso puede pagar solo los inveteres acumulados a esa fecha.','false','')
+				+pregunta('p4','collapsed','#r4','r4','¿Qué otros pagos debo hacer si me atraso en  pagar?','Se deben pagar los gastos administrativos de cobranza y custodia de las prendas.','false','')

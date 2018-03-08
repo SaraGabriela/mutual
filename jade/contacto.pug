@@ -2,24 +2,43 @@ extends ci/base.pug
 include ci/mixin.pug
 
 block content
-	+portada('CONTACTO','abf')
-	.row
-		.col
-			h4 ¿Tienes alguna consulta?
+	.row.hinversion.hbox.whitebg.align-items-center
+		.contenido.col-md-6.text-center
+			h2.xboldT.redT ¡CONTÁCTANOS!
+			h5.mg-b Te prestamos más y te cobramos menos
+			h4.text-justify Envía la foto de tu prenda (Joya, Electrodoméstico, Vehículo o Inmueble) a <a class="blueT boldT" href="https://www.facebook.com/mutualpopular/">nuestro Facebook</a> o a Whatsapp a 974214276, escribe cuanto dinero necesitas y <span class="boldT">espera respuesta en pocos minutos</span>
+		.imagen.col.text-center
+			img(src="../img/negociof.jpg")
+	.row.whitebg.ybox
+		.col-md-6
+			h4.xboldT.yellowT.mg-b ¿Tienes alguna consulta?
 			form
 				.form-group
-					input(type="name",class="form-control",id="formName" aria-describedby="userName" placeholder="Nombre")
-					input(type="email",class="form-control",id="formEmail" aria-describedby="email" placeholder="Email")
-					input(type="subject",class="form-control",id="formSubject" aria-describedby="subject" placeholder="Asunto")
-					textarea(class="form-control",id="formDescription",rows="3",placeholder="Mensaje")
-					button.btn(type="submit") Enviar
+					input.mg-b(type="name",class="form-control",id="formName" aria-describedby="userName" placeholder="Nombre")
+					input.mg-b(type="email",class="form-control",id="formEmail" aria-describedby="email" placeholder="Email")
+					input.mg-b(type="subject",class="form-control",id="formSubject" aria-describedby="subject" placeholder="Asunto")
+					textarea.mg-b(class="form-control",id="formDescription",rows="3",placeholder="Mensaje")
+					button.btn.btnPrincipal(type="submit") Enviar
+					<br></br>
+					<br></br>
+					h5.boldT.blueT También puedes escribirnos a:<br></br> <span class="darkTxt">impmutual@gmail.com, informes@mutualpopular.com y gerencia@mutualpopular.com</span>
+					<br></br>
+					h4.redT.boldT Llámanos al
+					h3 974214276 o al 054 619251
 		.col
 			div
-				h4 Dirección
-				p Lorem ipsum dolor sit amet
+				h4 Encuéntranos en <span class="redT">Av. Independencia 994, Cercado</span>
+				h5 (Al costado del coliseo Arequipa)
+				iframe.mg-b(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.21141552267326!2d-71.52898709533756!3d-16.40538148867405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424aff13d70da1%3A0xb4c3fbdf4bbe011f!2sAv+Independencia+994%2C+Arequipa!5e0!3m2!1ses-419!2spe!4v1507793435021",width="100%",height="400",frameborder="0",style="border:0",allowfullscreen)
 			div
-				h4 Llámanos
-				p Lorem ipsum dolor sit amet
-
-
-		
+				h4.mg-b Nuestro RUC es <span class="redT">20602178618</span>
+				<br></br>
+				h4.blueT Nuestras cuentas:
+				.media.align-items-center
+					img.d-flex.mr-3(src="../img/bcp.png",alt="Cuenta bcp",style="width:6rem;")
+					.media-body
+						h5.mt-0 215-2425478-0-93
+				.media.align-items-center
+					img.d-flex.mr-3(src="../img/bbva.png",alt="Cuenta bbva",style="width:6rem;")
+					.media-body
+						h5.mt-0 00110221900100027536						

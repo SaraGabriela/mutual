@@ -2,25 +2,39 @@ extends ci/estructura.pug
 include ci/mixin.pug
 
 block detalle
-	+portada('INVERSIONES','abf')
-	.row.justify-content-center
-		.col-md-10
-			p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-	.row
-		.imagen.col.row.justify-content-center
-			img(src="https://i.pinimg.com/736x/55/b3/af/55b3afe3275367bc8e6edc10501199be--flat-illustration-art-illustrations.jpg", style = "width:20rem; height:20rem")
-		.contenido.col
-			h3 ¿CÓMO GARANTIZAMOS TU INVERSIÓN?
-			p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-			button.btn Más información
-	.row
-		.contenido.col
-			h3 ¿CUÁNTO PAGAMOS POR TU INVERSIÓN?
-			p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-			button.btn Más información
-		.imagen.col.row.justify-content-center
-			img(src="https://i.pinimg.com/736x/55/b3/af/55b3afe3275367bc8e6edc10501199be--flat-illustration-art-illustrations.jpg", style = "width:20rem; height:20rem")
-	.row.justify-content-center
-		.col-md-10
-			h4 SIMULACIÓN
-			p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	+modal('modalInversion','aInversion')
+	.bgSmallI.inversionesP
+	.row.portadaSmallI.justify-content-center
+		.col-md-8.whitebg.text-center
+			h3.redT.boldT ¿Cuánto pagamos por tu inversión?
+			h4.blueT.boldT Hasta 24% al año
+			h4.blueT LOS MÁS ALTOS INTERESES A TU INVERSIÓN (NO SON AHORROS)
+			p.text-left.darkTxt Hasta 1,000 soles, 12% 
+			p.text-left.darkTxt Hasta 3,000 soles, 15%
+			p.text-left.darkTxt Hasta 5,000 soles, 18%
+			p.text-left.darkTxt Más de 5,000 soles, 24%						
+			ul.text-left
+				li La inversión es a plazo fijo anual.
+				li El pago de intereses es mensual.
+			h3.yellowT.boldT ¡Nunca consideres una inversión como una posible pérdida, sino como una oportunidad para triunfar en la vida!
+
+	.row.justify-content-center.yellowbg.pd-1
+		.col-md-8.text-center
+			h2.whiteT.xboldT.mg-b ¡Simula tu inversión!
+			.whitebg.rbox.text-left
+				h5.darkTxt ¿Cuál es tu monto a invertir?
+				input.mg-b#montoI(type="text")
+				h5.darkTxt ¿Cuál es tu plazo en meses?
+				input.mg-b#meses(type="text")
+				+inv('#modalInversion','calcInv()')
+	.row.hinversion.hbox.whitebg.align-items-center
+		.contenido.col-md-6.text-center
+			h3.boldT ¿Cómo garantizamos tu <span class="blueT">inversión</span>?
+			ol.text-justify
+				li Somos una sólida empresa legalmente constituida en Registros Públicos, Partida Electrónica Nº 11370177 del Registro de Personas Jurídicas.
+				li Registrado y Supervisado por la Superintendencia de Banca, Seguros y AFP, Unidad de inteligencia financiera.
+				li Cumplimos con la normatividad del Banco Central de Reserva.
+				li Un contrato legal de inversión en nuestra empresa, como inversionista nominal.
+				li Un Certificado de depósito como accionista nominal expectante.
+		.imagen.col-md-6.text-center
+			img(src="../img/negocio.jpg")

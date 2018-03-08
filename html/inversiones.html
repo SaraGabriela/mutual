@@ -2,7 +2,8 @@
 <html lang="es-PE">
   <head>
     <meta charset="UTF-8">
-    <title>Mutual Poular       </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutual Popular       </title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800" rel="stylesheet">
@@ -14,54 +15,87 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row navbar navbar-expand-lg"><a class="navbar-brand" href="index.html"><img src="../img/logo.png" style="width:45%;">
+      <div class="row navbar navbar-expand-lg justify-content-center"><a class="navbar-brand text-center" href="../index.html"><img src="../img/logo.png" style="width:45%;">
           <h2 class="mg-l xboldT" style="vertical-align:middle; display:inline-block;">MUTUAL <br> POPULAR</h2></a>
-        <button class="navbar-toggler align-self-end" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <button class="navbar-toggler align-self-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active"><a class="nav-link" href="index.html">INICIO</a></li>
-            <li class="nav-item"><a class="nav-link" href="nosotros.html">NOSOTROS</a></li>
+            <li class="nav-item active"><a class="nav-link" href="../index.html">INICIO</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">¿QUIÉNES SOMOS?</a></li>
             <li class="nav-item"><a class="nav-link" href="prestamos.html">PRÉSTAMOS</a></li>
             <li class="nav-item"><a class="nav-link" href="inversiones.html">INVERSIONES</a></li>
             <li class="nav-item"><a class="nav-link" href="servicios.html">SERVICIOS</a></li>
             <li class="nav-item"><a class="nav-link" href="preguntas.html">PREGUNTAS FRECUENTES</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.php">CONTACTO</a></li>
           </ul>
         </div>
       </div>
-      <div class="bgSmall abf"></div>
-      <div class="row jumbotron portadaSmall">
-        <h3 class="display-4">INVERSIONES</h3>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-10">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <div class="modal fade" id="modalInversion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body justify-content-center">
+              <h4 class="text-center pd-1" id="aInversion"></h4>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btnPrincipal" type="button" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="imagen col row justify-content-center"><img src="https://i.pinimg.com/736x/55/b3/af/55b3afe3275367bc8e6edc10501199be--flat-illustration-art-illustrations.jpg" style="width:20rem; height:20rem;"></div>
-        <div class="contenido col">
-          <h3>¿CÓMO GARANTIZAMOS TU INVERSIÓN?</h3>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-          <button class="btn">Más información</button>
+      <div class="bgSmallI inversionesP"></div>
+      <div class="row portadaSmallI justify-content-center">
+        <div class="col-md-8 whitebg text-center">
+          <h3 class="redT boldT">¿Cuánto pagamos por tu inversión?</h3>
+          <h4 class="blueT boldT">Hasta 24% al año</h4>
+          <h4 class="blueT">LOS MÁS ALTOS INTERESES A TU INVERSIÓN (NO SON AHORROS)</h4>
+          <p class="text-left darkTxt">Hasta 1,000 soles, 12% </p>
+          <p class="text-left darkTxt">Hasta 3,000 soles, 15%</p>
+          <p class="text-left darkTxt">Hasta 5,000 soles, 18%</p>
+          <p class="text-left darkTxt">Más de 5,000 soles, 24%						</p>
+          <ul class="text-left">
+            <li>La inversión es a plazo fijo anual.</li>
+            <li>El pago de intereses es mensual.</li>
+          </ul>
+          <h3 class="yellowT boldT">¡Nunca consideres una inversión como una posible pérdida, sino como una oportunidad para triunfar en la vida!</h3>
         </div>
       </div>
-      <div class="row">
-        <div class="contenido col">
-          <h3>¿CUÁNTO PAGAMOS POR TU INVERSIÓN?</h3>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-          <button class="btn">Más información</button>
+      <div class="row justify-content-center yellowbg pd-1">
+        <div class="col-md-8 text-center">
+          <h2 class="whiteT xboldT mg-b">¡Simula tu inversión!</h2>
+          <div class="whitebg rbox text-left">
+            <h5 class="darkTxt">¿Cuál es tu monto a invertir?</h5>
+            <input class="mg-b" id="montoI" type="text">
+            <h5 class="darkTxt">¿Cuál es tu plazo en meses?</h5>
+            <input class="mg-b" id="meses" type="text">
+            <h5 class="darkTxt">¿Cuál es el destino de tus utilidades?</h5>
+            <select class="mg-b" id="usage">
+              <option>Ganar más intereses que en bancos, cajas municipales o financieras</option>
+              <option>Que mi hijo tenga su mesada mensual sin que me cueste</option>
+              <option>Que mis ahorros ganen más dinero</option>
+              <option>Otro</option>
+            </select>
+            <button class="btn btnPrincipal d-block" type="button" data-toggle="modal" data-target="#modalInversion" onclick="calcInv()">Simular inversión</button>
+          </div>
         </div>
-        <div class="imagen col row justify-content-center"><img src="https://i.pinimg.com/736x/55/b3/af/55b3afe3275367bc8e6edc10501199be--flat-illustration-art-illustrations.jpg" style="width:20rem; height:20rem;"></div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-md-10">
-          <h4>SIMULACIÓN</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <div class="row hinversion hbox whitebg align-items-center">
+        <div class="contenido col-md-6 text-center">
+          <h3 class="boldT">¿Cómo garantizamos tu <span class="blueT">inversión</span>?</h3>
+          <ol class="text-justify">
+            <li>Somos una sólida empresa legalmente constituida en Registros Públicos, Partida Electrónica Nº 11370177 del Registro de Personas Jurídicas.</li>
+            <li>Registrado y Supervisado por la Superintendencia de Banca, Seguros y AFP, Unidad de inteligencia financiera.</li>
+            <li>Cumplimos con la normatividad del Banco Central de Reserva.</li>
+            <li>Un contrato legal de inversión en nuestra empresa, como inversionista nominal.</li>
+            <li>Un Certificado de depósito como accionista nominal expectante.</li>
+          </ol>
         </div>
+        <div class="imagen col-md-6 text-center"><img src="../img/negocio.jpg"></div>
       </div>
       <div class="row justify-content-around contactBar">
-        <h1>¿NECESITAS MÁS INFORMACIÓN?</h1><a class="btn btn-lg btnPrincipal" role="button" href="contacto.html">Contáctanos</a>
+        <h1>¿NECESITAS MÁS INFORMACIÓN?</h1><a class="btn btn-lg btnPrincipal" role="button" href="contacto.php">Contáctanos</a>
       </div>
     </div>
   </body>
