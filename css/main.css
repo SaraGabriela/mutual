@@ -1,3 +1,5 @@
+/**{outline: 1px solid rgba(255,0,0,0.3);}
+
 /*COLOR*/
 h1, h2, h3, h4, h5 {
   font-family: 'Monserrat',sans-serif !important; }
@@ -11,8 +13,17 @@ h1, h2, h3, h4, h5 {
   background: #4FBDBE !important;
   color: #fff !important; }
 
+.btnY {
+  background: #FFBF00 !important;
+  color: #fff !important; }
+
+.btnY:hover {
+  cursor: pointer !important;
+  background: #FFCA2E !important;
+  color: #fff !important; }
+
 .row {
-  font-size: 1.1rem; }
+  font-size: 1rem; }
 
 .nopad {
   padding: 0; }
@@ -275,24 +286,24 @@ h1, h2, h3, h4, h5 {
   padding: 1rem !important; }
   .modal-content .modal-body {
     padding: 0 2rem !important; }
-#modalOfer .modal-header, #modalOfer .modal-footer{
-  border-bottom: none;
-  border-top: none;
-}
-#modalOfer .modal-content{
-  background: url("../img/navidadnegocio.jpg") no-repeat !important;
-  background-size: cover !important;  
-}
-#modalOfer .modal-content .col-md-7{
-  background: rgba(144,144,144,0.7); 
-  padding: 1.5rem;
-}
+
 .card-header {
   background: #28AFB0 !important; }
   .card-header a {
     color: #fff !important;
     font-weight: 700;
     text-decoration: none; }
+
+.carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  left: 50%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center; }
 
 @media (max-width: 1240px) {
   .navbar {
@@ -349,13 +360,3 @@ h1, h2, h3, h4, h5 {
     height: 45rem; }
   .media img {
     width: 4rem !important; } }
-.ofertas {
-  margin-top: 1.3rem;
-  padding:1.2rem 0;
-}
-
-@media (min-width: 576px){
-#modalOfer .modal-dialog{
-  max-width: 800px !important;
-}
-}

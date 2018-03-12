@@ -1,4 +1,4 @@
-//*{outline: 1px solid rgba(255,0,0,0.3);}
+/**{outline: 1px solid rgba(255,0,0,0.3);}
 
 /*COLOR*/
 $azul-dark:   #303F9F;
@@ -26,7 +26,17 @@ h1,h2,h3,h4,h5{
 		background: #4FBDBE !important; //#EC6189
 		color:#fff !important;
 }
-.row{font-size:1.1rem;}
+.btnY{
+  background: $amarillo !important;
+  color:#fff !important;
+  }
+.btnY:hover{
+    cursor: pointer !important;
+    background: #FFCA2E !important; //#EC6189
+    color:#fff !important;
+}
+
+.row{font-size:1rem;}
 .nopad{
 	padding:0;
 	p{padding:0;}
@@ -240,7 +250,17 @@ p{color:$azul; font-weight:700;}}
   font-weight: 700;
 text-decoration:none;}
 }
-
+.carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+    left: 50%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
 @media (max-width: 1240px){
 .navbar{display: flex;
 flex-wrap: wrap;}

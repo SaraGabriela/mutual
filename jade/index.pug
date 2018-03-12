@@ -9,11 +9,17 @@ block detalle
 				li(data-target="#carouselExampleIndicators",data-slide-to="2")
 			.carousel-inner
 				.carousel-item.active
-					img.d-block.w-100(src="../img/slidecover3.jpg",alt="First slide")
+					img.d-block.w-100(src="../img/autoBanner.jpg",alt="First slide")
+					.carouselButton.d-none.d-md-block
+						a.btn.btnY(href="prestamos.html#auto")
+							h4 ¡Quiero un préstamo!
 				.carousel-item
-					img.d-block.w-100(src="../img/slidecover1.jpg",alt="Second slide")
+					img.d-block.w-100(src="../img/sorteo.jpg",alt="Second slide")
+					.carouselButton.d-none.d-md-block
+						a.btn.btnPrincipal(href="sorteo.php")
+							h4 Participar			
 				.carousel-item
-					img.d-block.w-100(src="../img/slidecover2.jpg",alt="Third slide")
+					img.d-block.w-100(src="../img/slidecover3.jpg",alt="Third slide")
 			a.carousel-control-prev(href="#carouselExampleIndicators",role="button",data-slide="prev")
 				span.carousel-control-prev-icon(aria-hidden="true")
 				span.sr-only Previous
@@ -30,7 +36,7 @@ block detalle
 				a(href="prestamos.html")
 					a.btn.btnPrincipal.btn-lg(role="button",href="prestamos.html") ¡Solicita tu préstamo!
 				p Somos la financiera del futuro, préstamos e inversiones en línea
-	.row.hinversion.hbox.bluebg.align-items-center
+	//.row.hinversion.hbox.bluebg.align-items-center
 		.contenido.col.text-center
 			h3.xboldT EMPIEZA A INVERTIR
 			h5.yellowT Pagamos más que cualquier banco o financiera por tu dinero
@@ -44,5 +50,8 @@ block detalle
 			a.btn.btnPrincipal.btn-lg(role="button",href="inversiones.html") ¡Simula tu inversión!
 		.imagen.col.text-center
 			img(src="../img/familia.jpg")
+	.row.bluebg.hbox.align-items-center.justify-content-center
+		.col-md-10.whitebg.ybox.text-center
+			h4.darkTxt Somos una empresa legalmente constituida, supervisada por la SBS (Superintendencia de Banca y Seguros), SUNARP, Municipalidad Provincial, INDECI y SUNAT
 		
 			

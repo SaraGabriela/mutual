@@ -12,6 +12,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../js/main.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9848975239245171",
+    enable_page_level_ads: true
+  });
+</script>
   </head>
   <body>
     <div class="container-fluid">
@@ -28,26 +35,28 @@
             <!--li.nav-itema.nav-link(href='servicios.html') SERVICIOS
             -->
             <li class="nav-item"><a class="nav-link" href="preguntas.html">PREGUNTAS FRECUENTES</a></li>
-            <li class="nav-item"><a class="nav-link" href="sorteo.php">   SORTEO   </a></li>
-            <li class="nav-item"><a class="nav-link" href="contacto.php">CONTACTO</a></li>
+            <li class="nav-item"><a class="nav-link" href="sorteo.html">   SORTEO   </a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
           </ul>
         </div>
       </div>
       <div class="bgSmallS serviciosP"></div>
       <div class="row portadaSmallS justify-content-center">
         <div class="col-md-8 whitebg text-center">
-          <h2 class="blueT xboldT mg-b">Nuestros servicios</h2>
-          <ul class="text-justify">
-            <li>Cambio del dólar al día</li>
-            <li>Transferencias</li>
-            <li>Pago de Remesas del Exterior</li>
-            <li>Pago Virtual de Documentos</li>
-            <li>Servicios de Recaudación</li>
-            <li>Consulta Código Cuenta Interbancario</li>
-            <li>Compra y Venta de Moneda Extranjera</li>
-            <li>Visa Checkout</li>
-            <li>Retención ElectrCompara intereses con otros bancos</li>
-          </ul>
+          <h2 class="blueT xboldT mg-b">LLÉVATE UNA COMPUTADORA<span class="yellowT"> GRATIS</span></h2>
+          <h4>Solo debes registrar tus datos y automáticamente participas en el sorteo</h4>
+          <br></br>
+          <form name="form1" method="post" action="envioSor.php">
+            <div class="form-group">
+              <input class="mg-b form-control" id="formName" aria-describedby="userName" placeholder="Nombres" name="txt_nombre" type="text" maxlength="200">
+              <input class="mg-b form-control" id="formLastname" aria-describedby="userLastname" placeholder="Apellidos" name="txt_apellido" type="text" maxlength="200">
+              <input class="mg-b form-control" id="formDNI" aria-describedby="userDNI" placeholder="DNI" name="txt_dni" type="text" maxlength="200">
+              <input class="mg-b form-control" type="email" id="formEmail" aria-describedby="email" placeholder="Email" name="txt_mail" maxlength="200">
+              <button class="btn btnPrincipal" type="submit" name="Submit" value="Submit">Enviar</button><br></br>
+<br></br>
+
+            </div>
+          </form>
         </div>
       </div>
       <div class="row justify-content-around contactBar">
